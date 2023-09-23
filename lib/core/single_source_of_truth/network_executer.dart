@@ -24,12 +24,20 @@ class NetworkExecuter {
   Future<Result<K, NetworkError>> execute<T extends BaseNetworkModel, K>(
       {required BaseClientGenerator route,
       required T responseType,
+      dynamic mockData,
       NetworkOptions? options}) async {
     if (debugMode) print(route.header);
 
     // Check Network Connectivity
     if (await networkConnectivity.status) {
       try {
+        if (mockData != null) {
+          var data = networkDecoder.decode<T, K>(
+              response:
+                  Response(data: mockData, requestOptions: RequestOptions()),
+              responseType: responseType);
+          return Result.success(data);
+        }
         var response =
             await networkCreator.request(route: route, options: options);
         var data = networkDecoder.decode<T, K>(

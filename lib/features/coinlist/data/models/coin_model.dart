@@ -7,7 +7,9 @@ import 'package:tittam/features/coinlist/domain/entities/coin.dart';
 part 'coin_model.g.dart';
 
 @JsonSerializable()
-class CoinModel extends  BaseNetworkModel<CoinModel> with EquatableMixin implements Coin {
+class CoinModel extends BaseNetworkModel<CoinModel>
+    with EquatableMixin
+    implements Coin {
   @override
   late final String id;
   @override
@@ -100,6 +102,9 @@ class CoinModel extends  BaseNetworkModel<CoinModel> with EquatableMixin impleme
   late final DateTime lastUpdated;
 
   @override
+  final bool isSelected = false;
+
+  @override
   CoinModel fromJson(Map<String, dynamic> json) {
     return _$CoinModelFromJson(json);
   }
@@ -136,4 +141,62 @@ class CoinModel extends  BaseNetworkModel<CoinModel> with EquatableMixin impleme
 
   @override
   bool? get stringify => true;
+
+  @override
+  Coin copyWith(
+      {String? id,
+      String? symbol,
+      String? name,
+      String? image,
+      num? currentPrice,
+      int? marketCap,
+      int? marketCapRank,
+      int? fullyDilutedValuation,
+      num? totalVolume,
+      num? high24H,
+      num? low24H,
+      double? priceChange24H,
+      double? priceChangePercentage24H,
+      double? marketCapChange24H,
+      double? marketCapChangePercentage24H,
+      num? circulatingSupply,
+      num? totalSupply,
+      num? maxSupply,
+      num? ath,
+      double? athChangePercentage,
+      DateTime? athDate,
+      double? atl,
+      double? atlChangePercentage,
+      DateTime? atlDate,
+      DateTime? lastUpdated,
+      bool? isSelected}) {
+    return Coin()
+      ..id = id ?? this.id
+      ..ath = ath ?? this.ath
+      ..atl = atl ?? this.atl
+      ..atlChangePercentage = atlChangePercentage ?? this.atlChangePercentage
+      ..atlDate = atlDate ?? this.atlDate
+      ..athChangePercentage = athChangePercentage ?? this.athChangePercentage
+      ..athDate = athDate ?? this.athDate
+      ..maxSupply = maxSupply ?? this.maxSupply
+      ..totalSupply = totalSupply ?? this.totalSupply
+      ..circulatingSupply = circulatingSupply ?? this.circulatingSupply
+      ..marketCapChangePercentage24H =
+          marketCapChangePercentage24H ?? this.marketCapChangePercentage24H
+      ..marketCapChange24H = marketCapChange24H ?? this.marketCapChange24H
+      ..priceChangePercentage24H =
+          priceChangePercentage24H ?? this.priceChangePercentage24H
+      ..priceChange24H = priceChange24H ?? this.priceChange24H
+      ..low24H = low24H ?? this.low24H
+      ..high24H = high24H ?? this.high24H
+      ..totalVolume = totalVolume ?? this.totalVolume
+      ..fullyDilutedValuation =
+          fullyDilutedValuation ?? this.fullyDilutedValuation
+      ..marketCapRank = marketCapRank ?? this.marketCapRank
+      ..marketCap = marketCap ?? this.marketCap
+      ..currentPrice = currentPrice ?? this.currentPrice
+      ..image = image ?? this.image
+      ..name = name ?? this.name
+      ..symbol = symbol ?? this.symbol;
+  }
 }

@@ -28,8 +28,9 @@ void main() {
     test(
         'should get data from getcoinlist usecase and emit content state when finish',
         () async {
+      final fakeStream = Stream<List<Coin>>.value(fakeListCoin);
       when(() => getCoinList.call(any()))
-          .thenAnswer((invocation) async => Result.success(fakeListCoin));
+          .thenAnswer((invocation) async => Result.success(fakeStream));
       expectLater(
           coinlistBloc.stream, emits(CoinlistState.content(fakeListCoin)));
 
@@ -43,7 +44,8 @@ void main() {
         () async {
       when(() => getCoinList.call(any())).thenAnswer((invocation) async =>
           const Result.failure(NetworkError.type(error: "error")));
-      expectLater(coinlistBloc.stream, emits(const CoinlistState.error(NetworkError.type(error: "error"))));
+      expectLater(coinlistBloc.stream,
+          emits(const CoinlistState.error(NetworkError.type(error: "error"))));
 
       coinlistBloc.add(const CoinListFetchCoinList());
     });

@@ -19,9 +19,10 @@ void main() {
   var fakeListCoin = [Coin(), Coin()];
 
   test('should get list of coin from repository', () async {
+    final fakeStream = Stream<List<Coin>>.value(fakeListCoin);
     //arrange
     when(() => coinListRepository.getCoinList())
-        .thenAnswer((_) async => Result.success(fakeListCoin));
+        .thenAnswer((_) async => Result.success(fakeStream));
     //act
     final result = await getCoinList(NoParams());
     //assert
