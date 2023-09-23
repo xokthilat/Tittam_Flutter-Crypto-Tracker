@@ -35,30 +35,3 @@ CoinModel _$CoinModelFromJson(Map<String, dynamic> json) => CoinModel()
   ..atlDate = DateTime.parse(json['atl_date'] as String)
   ..lastUpdated = DateTime.parse(json['last_updated'] as String);
 
-Map<String, dynamic> _$CoinModelToJson(CoinModel instance) => <String, dynamic>{
-      'id': instance.id,
-      'symbol': instance.symbol,
-      'name': instance.name,
-      'image': instance.image,
-      'current_price': instance.currentPrice,
-      'market_cap': instance.marketCap,
-      'market_cap_rank': instance.marketCapRank,
-      'fully_diluted_valuation': instance.fullyDilutedValuation,
-      'total_volume': instance.totalVolume,
-      'high_24h': instance.high24H,
-      'low_24h': instance.low24H,
-      'price_change_24h': instance.priceChange24H,
-      'price_change_percentage_24h': instance.priceChangePercentage24H,
-      'market_cap_change_24h': instance.marketCapChange24H,
-      'market_cap_change_percentage_24h': instance.marketCapChangePercentage24H,
-      'circulating_supply': instance.circulatingSupply,
-      'total_supply': instance.totalSupply,
-      'max_supply': instance.maxSupply,
-      'ath': instance.ath,
-      'ath_change_percentage': instance.athChangePercentage,
-      'ath_date': instance.athDate.toIso8601String(),
-      'atl': instance.atl,
-      'atl_change_percentage': instance.atlChangePercentage,
-      'atl_date': instance.atlDate.toIso8601String(),
-      'last_updated': instance.lastUpdated.toIso8601String(),
-    };

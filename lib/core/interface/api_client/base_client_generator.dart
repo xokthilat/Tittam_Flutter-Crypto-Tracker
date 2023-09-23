@@ -6,6 +6,6 @@ abstract class BaseClientGenerator{
   dynamic get body;
   Map<String,dynamic>? get queryParameters;
   Map<String,dynamic> get header;
-  int? get sendTimeout => 30000;
-  int? get receiveTimeOut => 30000;
+  Duration? get sendTimeout =>  const Duration(seconds: 30000);
+  Duration? get receiveTimeOut => const Duration(seconds: 30000);
 }

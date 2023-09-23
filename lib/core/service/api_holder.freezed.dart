@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'api_holder.dart';
 
@@ -11,19 +12,7 @@ part of 'api_holder.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$ApiHolderTearOff {
-  const _$ApiHolderTearOff();
-
-  _FetchListCoin fetchListCoin() {
-    return const _FetchListCoin();
-  }
-}
-
-/// @nodoc
-const $ApiHolder = _$ApiHolderTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$ApiHolder {
@@ -34,7 +23,7 @@ mixin _$ApiHolder {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? fetchListCoin,
+    TResult? Function()? fetchListCoin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,7 +39,7 @@ mixin _$ApiHolder {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FetchListCoin value)? fetchListCoin,
+    TResult? Function(_FetchListCoin value)? fetchListCoin,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -64,34 +53,34 @@ mixin _$ApiHolder {
 /// @nodoc
 abstract class $ApiHolderCopyWith<$Res> {
   factory $ApiHolderCopyWith(ApiHolder value, $Res Function(ApiHolder) then) =
-      _$ApiHolderCopyWithImpl<$Res>;
+      _$ApiHolderCopyWithImpl<$Res, ApiHolder>;
 }
 
 /// @nodoc
-class _$ApiHolderCopyWithImpl<$Res> implements $ApiHolderCopyWith<$Res> {
+class _$ApiHolderCopyWithImpl<$Res, $Val extends ApiHolder>
+    implements $ApiHolderCopyWith<$Res> {
   _$ApiHolderCopyWithImpl(this._value, this._then);
 
-  final ApiHolder _value;
   // ignore: unused_field
-  final $Res Function(ApiHolder) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$FetchListCoinCopyWith<$Res> {
-  factory _$FetchListCoinCopyWith(
-          _FetchListCoin value, $Res Function(_FetchListCoin) then) =
-      __$FetchListCoinCopyWithImpl<$Res>;
+abstract class _$$_FetchListCoinCopyWith<$Res> {
+  factory _$$_FetchListCoinCopyWith(
+          _$_FetchListCoin value, $Res Function(_$_FetchListCoin) then) =
+      __$$_FetchListCoinCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$FetchListCoinCopyWithImpl<$Res> extends _$ApiHolderCopyWithImpl<$Res>
-    implements _$FetchListCoinCopyWith<$Res> {
-  __$FetchListCoinCopyWithImpl(
-      _FetchListCoin _value, $Res Function(_FetchListCoin) _then)
-      : super(_value, (v) => _then(v as _FetchListCoin));
-
-  @override
-  _FetchListCoin get _value => super._value as _FetchListCoin;
+class __$$_FetchListCoinCopyWithImpl<$Res>
+    extends _$ApiHolderCopyWithImpl<$Res, _$_FetchListCoin>
+    implements _$$_FetchListCoinCopyWith<$Res> {
+  __$$_FetchListCoinCopyWithImpl(
+      _$_FetchListCoin _value, $Res Function(_$_FetchListCoin) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -107,7 +96,7 @@ class _$_FetchListCoin extends _FetchListCoin {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _FetchListCoin);
+        (other.runtimeType == runtimeType && other is _$_FetchListCoin);
   }
 
   @override
@@ -124,7 +113,7 @@ class _$_FetchListCoin extends _FetchListCoin {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? fetchListCoin,
+    TResult? Function()? fetchListCoin,
   }) {
     return fetchListCoin?.call();
   }
@@ -152,7 +141,7 @@ class _$_FetchListCoin extends _FetchListCoin {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_FetchListCoin value)? fetchListCoin,
+    TResult? Function(_FetchListCoin value)? fetchListCoin,
   }) {
     return fetchListCoin?.call(this);
   }

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:tittam/core/interface/api_client/base_client_generator.dart';
 import 'package:tittam/core/interface/models/base_network_model.dart';
 import 'package:tittam/core/interface/response/network_error.dart';
@@ -35,24 +37,28 @@ class NetworkExecuter {
         return Result.success(data);
 
         // NETWORK ERROR
-      } on DioError catch (dioError) {
-        if (debugMode)
+      } on DioException catch (dioError) {
+        if (debugMode) {
           print("$route => ${NetworkError.request(error: dioError)}");
+        }
         return Result.failure(NetworkError.request(error: dioError));
 
         // TYPE ERROR
       } on TypeError catch (e) {
-        if (debugMode)
+        if (debugMode) {
           print("$route => ${NetworkError.type(error: e.toString())}");
+        }
         return Result.failure(NetworkError.type(error: e.toString()));
       }
 
       // No Internet Connection
     } else {
-      if (debugMode)
-        print(NetworkError.connectivity(message: 'No Internet Connection'));
-      return const Result.failure(
-          NetworkError.connectivity(message: 'No Internet Connection'));
+      if (debugMode) {
+        print(
+            const NetworkError.connectivity(message: 'No Internet Connection'));
+      }
     }
+    return const Result.failure(
+        NetworkError.connectivity(message: 'No Internet Connection'));
   }
 }

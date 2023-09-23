@@ -33,7 +33,7 @@ void main() {
       expectLater(
           coinlistBloc.stream, emits(CoinlistState.content(fakeListCoin)));
 
-      coinlistBloc.add(const CoinlistEvent.fetchCoinList());
+      coinlistBloc.add(const CoinListFetchCoinList());
 
       await untilCalled(() => getCoinList.call(any()));
       verify(() => getCoinList.call(NoParams()));
@@ -45,7 +45,7 @@ void main() {
           const Result.failure(NetworkError.type(error: "error")));
       expectLater(coinlistBloc.stream, emits(const CoinlistState.error(NetworkError.type(error: "error"))));
 
-      coinlistBloc.add(const CoinlistEvent.fetchCoinList());
+      coinlistBloc.add(const CoinListFetchCoinList());
     });
   });
 }

@@ -1,7 +1,12 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-part "coinlist_event.freezed.dart";
+import 'package:equatable/equatable.dart';
 
-@freezed
-abstract class CoinlistEvent with _$CoinlistEvent {
-  const factory CoinlistEvent.fetchCoinList() = _FetchCoinListEvent;
+
+sealed class CoinlistEvent extends Equatable {
+  const CoinlistEvent();
+
+  @override
+  List<Object> get props => [];
+}
+final class CoinListFetchCoinList extends CoinlistEvent {
+  const CoinListFetchCoinList();
 }

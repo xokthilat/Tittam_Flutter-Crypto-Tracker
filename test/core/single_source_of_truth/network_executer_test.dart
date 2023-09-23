@@ -68,7 +68,7 @@ void main() {
           route: const ApiHolder.fetchListCoin(), responseType: CoinModel());
       result.when(failure: (error) {
         error.when(request: (dioError) {
-          expect(dioError, isA<DioError>());
+          expect(dioError, isA<DioException>());
         }, type: (typeError) {
           throw typeError!;
         }, connectivity: (connectionError) {

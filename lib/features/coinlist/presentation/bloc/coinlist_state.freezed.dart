@@ -1,6 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'coinlist_state.dart';
 
@@ -11,31 +12,7 @@ part of 'coinlist_state.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$CoinlistStateTearOff {
-  const _$CoinlistStateTearOff();
-
-  _CoinListLoading loading() {
-    return const _CoinListLoading();
-  }
-
-  _CoinListContent content(List<Coin> listCoin) {
-    return _CoinListContent(
-      listCoin,
-    );
-  }
-
-  _CoinListError error(Exception e) {
-    return _CoinListError(
-      e,
-    );
-  }
-}
-
-/// @nodoc
-const $CoinlistState = _$CoinlistStateTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$CoinlistState {
@@ -48,9 +25,9 @@ mixin _$CoinlistState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult? Function()? loading,
+    TResult? Function(List<Coin> listCoin)? content,
+    TResult? Function(Exception e)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -70,9 +47,9 @@ mixin _$CoinlistState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_CoinListLoading value)? loading,
-    TResult Function(_CoinListContent value)? content,
-    TResult Function(_CoinListError value)? error,
+    TResult? Function(_CoinListLoading value)? loading,
+    TResult? Function(_CoinListContent value)? content,
+    TResult? Function(_CoinListError value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,36 +66,34 @@ mixin _$CoinlistState {
 abstract class $CoinlistStateCopyWith<$Res> {
   factory $CoinlistStateCopyWith(
           CoinlistState value, $Res Function(CoinlistState) then) =
-      _$CoinlistStateCopyWithImpl<$Res>;
+      _$CoinlistStateCopyWithImpl<$Res, CoinlistState>;
 }
 
 /// @nodoc
-class _$CoinlistStateCopyWithImpl<$Res>
+class _$CoinlistStateCopyWithImpl<$Res, $Val extends CoinlistState>
     implements $CoinlistStateCopyWith<$Res> {
   _$CoinlistStateCopyWithImpl(this._value, this._then);
 
-  final CoinlistState _value;
   // ignore: unused_field
-  final $Res Function(CoinlistState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$CoinListLoadingCopyWith<$Res> {
-  factory _$CoinListLoadingCopyWith(
-          _CoinListLoading value, $Res Function(_CoinListLoading) then) =
-      __$CoinListLoadingCopyWithImpl<$Res>;
+abstract class _$$_CoinListLoadingCopyWith<$Res> {
+  factory _$$_CoinListLoadingCopyWith(
+          _$_CoinListLoading value, $Res Function(_$_CoinListLoading) then) =
+      __$$_CoinListLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$CoinListLoadingCopyWithImpl<$Res>
-    extends _$CoinlistStateCopyWithImpl<$Res>
-    implements _$CoinListLoadingCopyWith<$Res> {
-  __$CoinListLoadingCopyWithImpl(
-      _CoinListLoading _value, $Res Function(_CoinListLoading) _then)
-      : super(_value, (v) => _then(v as _CoinListLoading));
-
-  @override
-  _CoinListLoading get _value => super._value as _CoinListLoading;
+class __$$_CoinListLoadingCopyWithImpl<$Res>
+    extends _$CoinlistStateCopyWithImpl<$Res, _$_CoinListLoading>
+    implements _$$_CoinListLoadingCopyWith<$Res> {
+  __$$_CoinListLoadingCopyWithImpl(
+      _$_CoinListLoading _value, $Res Function(_$_CoinListLoading) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
@@ -134,7 +109,7 @@ class _$_CoinListLoading implements _CoinListLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _CoinListLoading);
+        (other.runtimeType == runtimeType && other is _$_CoinListLoading);
   }
 
   @override
@@ -153,9 +128,9 @@ class _$_CoinListLoading implements _CoinListLoading {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult? Function()? loading,
+    TResult? Function(List<Coin> listCoin)? content,
+    TResult? Function(Exception e)? error,
   }) {
     return loading?.call();
   }
@@ -187,9 +162,9 @@ class _$_CoinListLoading implements _CoinListLoading {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_CoinListLoading value)? loading,
-    TResult Function(_CoinListContent value)? content,
-    TResult Function(_CoinListError value)? error,
+    TResult? Function(_CoinListLoading value)? loading,
+    TResult? Function(_CoinListContent value)? content,
+    TResult? Function(_CoinListError value)? error,
   }) {
     return loading?.call(this);
   }
@@ -214,31 +189,30 @@ abstract class _CoinListLoading implements CoinlistState {
 }
 
 /// @nodoc
-abstract class _$CoinListContentCopyWith<$Res> {
-  factory _$CoinListContentCopyWith(
-          _CoinListContent value, $Res Function(_CoinListContent) then) =
-      __$CoinListContentCopyWithImpl<$Res>;
+abstract class _$$_CoinListContentCopyWith<$Res> {
+  factory _$$_CoinListContentCopyWith(
+          _$_CoinListContent value, $Res Function(_$_CoinListContent) then) =
+      __$$_CoinListContentCopyWithImpl<$Res>;
+  @useResult
   $Res call({List<Coin> listCoin});
 }
 
 /// @nodoc
-class __$CoinListContentCopyWithImpl<$Res>
-    extends _$CoinlistStateCopyWithImpl<$Res>
-    implements _$CoinListContentCopyWith<$Res> {
-  __$CoinListContentCopyWithImpl(
-      _CoinListContent _value, $Res Function(_CoinListContent) _then)
-      : super(_value, (v) => _then(v as _CoinListContent));
+class __$$_CoinListContentCopyWithImpl<$Res>
+    extends _$CoinlistStateCopyWithImpl<$Res, _$_CoinListContent>
+    implements _$$_CoinListContentCopyWith<$Res> {
+  __$$_CoinListContentCopyWithImpl(
+      _$_CoinListContent _value, $Res Function(_$_CoinListContent) _then)
+      : super(_value, _then);
 
-  @override
-  _CoinListContent get _value => super._value as _CoinListContent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? listCoin = freezed,
+    Object? listCoin = null,
   }) {
-    return _then(_CoinListContent(
-      listCoin == freezed
-          ? _value.listCoin
+    return _then(_$_CoinListContent(
+      null == listCoin
+          ? _value._listCoin
           : listCoin // ignore: cast_nullable_to_non_nullable
               as List<Coin>,
     ));
@@ -248,10 +222,15 @@ class __$CoinListContentCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_CoinListContent implements _CoinListContent {
-  const _$_CoinListContent(this.listCoin);
+  const _$_CoinListContent(final List<Coin> listCoin) : _listCoin = listCoin;
 
+  final List<Coin> _listCoin;
   @override
-  final List<Coin> listCoin;
+  List<Coin> get listCoin {
+    if (_listCoin is EqualUnmodifiableListView) return _listCoin;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_listCoin);
+  }
 
   @override
   String toString() {
@@ -262,18 +241,19 @@ class _$_CoinListContent implements _CoinListContent {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CoinListContent &&
-            const DeepCollectionEquality().equals(other.listCoin, listCoin));
+            other is _$_CoinListContent &&
+            const DeepCollectionEquality().equals(other._listCoin, _listCoin));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(listCoin));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_listCoin));
 
   @JsonKey(ignore: true)
   @override
-  _$CoinListContentCopyWith<_CoinListContent> get copyWith =>
-      __$CoinListContentCopyWithImpl<_CoinListContent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_CoinListContentCopyWith<_$_CoinListContent> get copyWith =>
+      __$$_CoinListContentCopyWithImpl<_$_CoinListContent>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -288,9 +268,9 @@ class _$_CoinListContent implements _CoinListContent {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult? Function()? loading,
+    TResult? Function(List<Coin> listCoin)? content,
+    TResult? Function(Exception e)? error,
   }) {
     return content?.call(listCoin);
   }
@@ -322,9 +302,9 @@ class _$_CoinListContent implements _CoinListContent {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_CoinListLoading value)? loading,
-    TResult Function(_CoinListContent value)? content,
-    TResult Function(_CoinListError value)? error,
+    TResult? Function(_CoinListLoading value)? loading,
+    TResult? Function(_CoinListContent value)? content,
+    TResult? Function(_CoinListError value)? error,
   }) {
     return content?.call(this);
   }
@@ -345,39 +325,39 @@ class _$_CoinListContent implements _CoinListContent {
 }
 
 abstract class _CoinListContent implements CoinlistState {
-  const factory _CoinListContent(List<Coin> listCoin) = _$_CoinListContent;
+  const factory _CoinListContent(final List<Coin> listCoin) =
+      _$_CoinListContent;
 
   List<Coin> get listCoin;
   @JsonKey(ignore: true)
-  _$CoinListContentCopyWith<_CoinListContent> get copyWith =>
+  _$$_CoinListContentCopyWith<_$_CoinListContent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$CoinListErrorCopyWith<$Res> {
-  factory _$CoinListErrorCopyWith(
-          _CoinListError value, $Res Function(_CoinListError) then) =
-      __$CoinListErrorCopyWithImpl<$Res>;
+abstract class _$$_CoinListErrorCopyWith<$Res> {
+  factory _$$_CoinListErrorCopyWith(
+          _$_CoinListError value, $Res Function(_$_CoinListError) then) =
+      __$$_CoinListErrorCopyWithImpl<$Res>;
+  @useResult
   $Res call({Exception e});
 }
 
 /// @nodoc
-class __$CoinListErrorCopyWithImpl<$Res>
-    extends _$CoinlistStateCopyWithImpl<$Res>
-    implements _$CoinListErrorCopyWith<$Res> {
-  __$CoinListErrorCopyWithImpl(
-      _CoinListError _value, $Res Function(_CoinListError) _then)
-      : super(_value, (v) => _then(v as _CoinListError));
+class __$$_CoinListErrorCopyWithImpl<$Res>
+    extends _$CoinlistStateCopyWithImpl<$Res, _$_CoinListError>
+    implements _$$_CoinListErrorCopyWith<$Res> {
+  __$$_CoinListErrorCopyWithImpl(
+      _$_CoinListError _value, $Res Function(_$_CoinListError) _then)
+      : super(_value, _then);
 
-  @override
-  _CoinListError get _value => super._value as _CoinListError;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? e = freezed,
+    Object? e = null,
   }) {
-    return _then(_CoinListError(
-      e == freezed
+    return _then(_$_CoinListError(
+      null == e
           ? _value.e
           : e // ignore: cast_nullable_to_non_nullable
               as Exception,
@@ -402,7 +382,7 @@ class _$_CoinListError implements _CoinListError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _CoinListError &&
+            other is _$_CoinListError &&
             (identical(other.e, e) || other.e == e));
   }
 
@@ -411,8 +391,9 @@ class _$_CoinListError implements _CoinListError {
 
   @JsonKey(ignore: true)
   @override
-  _$CoinListErrorCopyWith<_CoinListError> get copyWith =>
-      __$CoinListErrorCopyWithImpl<_CoinListError>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_CoinListErrorCopyWith<_$_CoinListError> get copyWith =>
+      __$$_CoinListErrorCopyWithImpl<_$_CoinListError>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -427,9 +408,9 @@ class _$_CoinListError implements _CoinListError {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loading,
-    TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult? Function()? loading,
+    TResult? Function(List<Coin> listCoin)? content,
+    TResult? Function(Exception e)? error,
   }) {
     return error?.call(e);
   }
@@ -461,9 +442,9 @@ class _$_CoinListError implements _CoinListError {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_CoinListLoading value)? loading,
-    TResult Function(_CoinListContent value)? content,
-    TResult Function(_CoinListError value)? error,
+    TResult? Function(_CoinListLoading value)? loading,
+    TResult? Function(_CoinListContent value)? content,
+    TResult? Function(_CoinListError value)? error,
   }) {
     return error?.call(this);
   }
@@ -484,10 +465,10 @@ class _$_CoinListError implements _CoinListError {
 }
 
 abstract class _CoinListError implements CoinlistState {
-  const factory _CoinListError(Exception e) = _$_CoinListError;
+  const factory _CoinListError(final Exception e) = _$_CoinListError;
 
   Exception get e;
   @JsonKey(ignore: true)
-  _$CoinListErrorCopyWith<_CoinListError> get copyWith =>
+  _$$_CoinListErrorCopyWith<_$_CoinListError> get copyWith =>
       throw _privateConstructorUsedError;
 }

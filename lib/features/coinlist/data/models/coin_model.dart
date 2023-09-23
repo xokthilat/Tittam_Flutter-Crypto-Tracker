@@ -1,13 +1,13 @@
 import 'package:equatable/equatable.dart';
+import 'package:json_annotation/json_annotation.dart';
+
 import 'package:tittam/core/interface/models/base_network_model.dart';
 import 'package:tittam/features/coinlist/domain/entities/coin.dart';
-import 'package:json_annotation/json_annotation.dart';
+
 part 'coin_model.g.dart';
 
 @JsonSerializable()
-class CoinModel extends Equatable
-    with BaseNetworkModel<CoinModel>
-    implements Coin {
+class CoinModel extends  BaseNetworkModel<CoinModel> with EquatableMixin implements Coin {
   @override
   late final String id;
   @override
