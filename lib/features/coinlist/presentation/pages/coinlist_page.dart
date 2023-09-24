@@ -25,8 +25,8 @@ class ConlistPage extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("ຫຼຽນ", style: TextStyle(fontSize: 20)),
-                  Text("ລາຄາປະຈຸບັນ", style: TextStyle(fontSize: 20))
+                  Text("Coins", style: TextStyle(fontSize: 20)),
+                  Text("Current price", style: TextStyle(fontSize: 20))
                 ],
               ),
             ),
