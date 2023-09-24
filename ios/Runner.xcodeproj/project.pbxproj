@@ -23,8 +23,16 @@
 		BC1058492ABECCA40065FC02 /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1058482ABECCA40065FC02 /* widget.swift */; };
 		BC10584B2ABECCA70065FC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10584A2ABECCA70065FC02 /* Assets.xcassets */; };
 		BC10584F2ABECCA70065FC02 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC10583E2ABECCA40065FC02 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BC9DABC82ABEDCEA00EAC02F /* networkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */; };
-		BC9DABC92ABEDCEA00EAC02F /* networkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */; };
+		BC9DABD12ABFE6F500EAC02F /* trackwatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABD02ABFE6F500EAC02F /* trackwatchApp.swift */; };
+		BC9DABD32ABFE6F500EAC02F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABD22ABFE6F500EAC02F /* ContentView.swift */; };
+		BC9DABD52ABFE6F700EAC02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9DABD42ABFE6F700EAC02F /* Assets.xcassets */; };
+		BC9DABD82ABFE6F700EAC02F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9DABD72ABFE6F700EAC02F /* Preview Assets.xcassets */; };
+		BC9DABE22ABFE6F800EAC02F /* trackwatch_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABE12ABFE6F800EAC02F /* trackwatch_Watch_AppTests.swift */; };
+		BC9DABEC2ABFE6F800EAC02F /* trackwatch_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABEB2ABFE6F800EAC02F /* trackwatch_Watch_AppUITests.swift */; };
+		BC9DABEE2ABFE6F800EAC02F /* trackwatch_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABED2ABFE6F800EAC02F /* trackwatch_Watch_AppUITestsLaunchTests.swift */; };
+		BC9DABF12ABFE6F800EAC02F /* trackwatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BC9DABCE2ABFE6F500EAC02F /* trackwatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC9DABFF2ABFE83200EAC02F /* networkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */; };
+		BC9DAC022ABFEC0100EAC02F /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DAC012ABFEC0100EAC02F /* viewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = BC10583D2ABECCA30065FC02;
 			remoteInfo = widgetExtension;
+		};
+		BC9DABDE2ABFE6F700EAC02F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9DABCD2ABFE6F500EAC02F;
+			remoteInfo = "trackwatch Watch App";
+		};
+		BC9DABE82ABFE6F800EAC02F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9DABCD2ABFE6F500EAC02F;
+			remoteInfo = "trackwatch Watch App";
+		};
+		BC9DABEF2ABFE6F800EAC02F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9DABCD2ABFE6F500EAC02F;
+			remoteInfo = "trackwatch Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,6 +86,17 @@
 				BC10584F2ABECCA70065FC02 /* widgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABF22ABFE6F800EAC02F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BC9DABF12ABFE6F800EAC02F /* trackwatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -88,6 +128,17 @@
 		BC10584A2ABECCA70065FC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC10584C2ABECCA70065FC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkImage.swift; sourceTree = "<group>"; };
+		BC9DABCE2ABFE6F500EAC02F /* trackwatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trackwatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9DABD02ABFE6F500EAC02F /* trackwatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackwatchApp.swift; sourceTree = "<group>"; };
+		BC9DABD22ABFE6F500EAC02F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC9DABD42ABFE6F700EAC02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC9DABD72ABFE6F700EAC02F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC9DABDD2ABFE6F700EAC02F /* trackwatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trackwatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9DABE12ABFE6F800EAC02F /* trackwatch_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackwatch_Watch_AppTests.swift; sourceTree = "<group>"; };
+		BC9DABE72ABFE6F800EAC02F /* trackwatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trackwatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC9DABEB2ABFE6F800EAC02F /* trackwatch_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackwatch_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		BC9DABED2ABFE6F800EAC02F /* trackwatch_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackwatch_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC9DAC012ABFEC0100EAC02F /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 		E70DCDD6D2D9BA486DB7E7BA /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +157,27 @@
 			files = (
 				BC1058422ABECCA40065FC02 /* SwiftUI.framework in Frameworks */,
 				BC1058402ABECCA40065FC02 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABCB2ABFE6F500EAC02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABDA2ABFE6F700EAC02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABE42ABFE6F800EAC02F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +212,9 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				BC1058432ABECCA40065FC02 /* widget */,
+				BC9DABCF2ABFE6F500EAC02F /* trackwatch Watch App */,
+				BC9DABE02ABFE6F800EAC02F /* trackwatch Watch AppTests */,
+				BC9DABEA2ABFE6F800EAC02F /* trackwatch Watch AppUITests */,
 				97C146EF1CF9000F007C117D /* Products */,
 				0EBC72F9D447267AAC4D2BDF /* Pods */,
 				D1C96E9BDC15B30028ECB53D /* Frameworks */,
@@ -151,6 +226,9 @@
 			children = (
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				BC10583E2ABECCA40065FC02 /* widgetExtension.appex */,
+				BC9DABCE2ABFE6F500EAC02F /* trackwatch Watch App.app */,
+				BC9DABDD2ABFE6F700EAC02F /* trackwatch Watch AppTests.xctest */,
+				BC9DABE72ABFE6F800EAC02F /* trackwatch Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,12 +253,57 @@
 			children = (
 				BC1058442ABECCA40065FC02 /* widgetBundle.swift */,
 				BC1058462ABECCA40065FC02 /* widgetLiveActivity.swift */,
-				BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */,
 				BC1058482ABECCA40065FC02 /* widget.swift */,
 				BC10584A2ABECCA70065FC02 /* Assets.xcassets */,
 				BC10584C2ABECCA70065FC02 /* Info.plist */,
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		BC9DABCF2ABFE6F500EAC02F /* trackwatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DABD02ABFE6F500EAC02F /* trackwatchApp.swift */,
+				BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */,
+				BC9DABD22ABFE6F500EAC02F /* ContentView.swift */,
+				BC9DAC002ABFEBEA00EAC02F /* viewModel */,
+				BC9DABD42ABFE6F700EAC02F /* Assets.xcassets */,
+				BC9DABD62ABFE6F700EAC02F /* Preview Content */,
+			);
+			path = "trackwatch Watch App";
+			sourceTree = "<group>";
+		};
+		BC9DABD62ABFE6F700EAC02F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DABD72ABFE6F700EAC02F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC9DABE02ABFE6F800EAC02F /* trackwatch Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DABE12ABFE6F800EAC02F /* trackwatch_Watch_AppTests.swift */,
+			);
+			path = "trackwatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		BC9DABEA2ABFE6F800EAC02F /* trackwatch Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DABEB2ABFE6F800EAC02F /* trackwatch_Watch_AppUITests.swift */,
+				BC9DABED2ABFE6F800EAC02F /* trackwatch_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "trackwatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		BC9DAC002ABFEBEA00EAC02F /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC9DAC012ABFEC0100EAC02F /* viewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		D1C96E9BDC15B30028ECB53D /* Frameworks */ = {
@@ -203,17 +326,19 @@
 				0E1069A900959A2EB15329BB /* [CP] Check Pods Manifest.lock */,
 				BC1058502ABECCA70065FC02 /* Embed Foundation Extensions */,
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
+				BC9DABF22ABFE6F800EAC02F /* Embed Watch Content */,
+				10403DAB143A334E7C0FF5B6 /* [CP] Embed Pods Frameworks */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
-				10403DAB143A334E7C0FF5B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BC10584E2ABECCA70065FC02 /* PBXTargetDependency */,
+				BC9DABF02ABFE6F800EAC02F /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -237,6 +362,59 @@
 			productReference = BC10583E2ABECCA40065FC02 /* widgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9DABFC2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch App" */;
+			buildPhases = (
+				BC9DABCA2ABFE6F500EAC02F /* Sources */,
+				BC9DABCB2ABFE6F500EAC02F /* Frameworks */,
+				BC9DABCC2ABFE6F500EAC02F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "trackwatch Watch App";
+			productName = "trackwatch Watch App";
+			productReference = BC9DABCE2ABFE6F500EAC02F /* trackwatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC9DABDC2ABFE6F700EAC02F /* trackwatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9DABFD2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch AppTests" */;
+			buildPhases = (
+				BC9DABD92ABFE6F700EAC02F /* Sources */,
+				BC9DABDA2ABFE6F700EAC02F /* Frameworks */,
+				BC9DABDB2ABFE6F700EAC02F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC9DABDF2ABFE6F700EAC02F /* PBXTargetDependency */,
+			);
+			name = "trackwatch Watch AppTests";
+			productName = "trackwatch Watch AppTests";
+			productReference = BC9DABDD2ABFE6F700EAC02F /* trackwatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC9DABE62ABFE6F800EAC02F /* trackwatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC9DABFE2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch AppUITests" */;
+			buildPhases = (
+				BC9DABE32ABFE6F800EAC02F /* Sources */,
+				BC9DABE42ABFE6F800EAC02F /* Frameworks */,
+				BC9DABE52ABFE6F800EAC02F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC9DABE92ABFE6F800EAC02F /* PBXTargetDependency */,
+			);
+			name = "trackwatch Watch AppUITests";
+			productName = "trackwatch Watch AppUITests";
+			productReference = BC9DABE72ABFE6F800EAC02F /* trackwatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -253,6 +431,17 @@
 					};
 					BC10583D2ABECCA30065FC02 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					BC9DABCD2ABFE6F500EAC02F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BC9DABDC2ABFE6F700EAC02F = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BC9DABCD2ABFE6F500EAC02F;
+					};
+					BC9DABE62ABFE6F800EAC02F = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = BC9DABCD2ABFE6F500EAC02F;
 					};
 				};
 			};
@@ -271,6 +460,9 @@
 			targets = (
 				97C146ED1CF9000F007C117D /* Runner */,
 				BC10583D2ABECCA30065FC02 /* widgetExtension */,
+				BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */,
+				BC9DABDC2ABFE6F700EAC02F /* trackwatch Watch AppTests */,
+				BC9DABE62ABFE6F800EAC02F /* trackwatch Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +484,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC10584B2ABECCA70065FC02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABCC2ABFE6F500EAC02F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DABD82ABFE6F700EAC02F /* Preview Assets.xcassets in Resources */,
+				BC9DABD52ABFE6F700EAC02F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABDB2ABFE6F700EAC02F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABE52ABFE6F800EAC02F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +592,6 @@
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
-				BC9DABC82ABEDCEA00EAC02F /* networkImage.swift in Sources */,
 				BC03CE562ABECEA900BC6547 /* CryptyAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,10 +601,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1058492ABECCA40065FC02 /* widget.swift in Sources */,
-				BC9DABC92ABEDCEA00EAC02F /* networkImage.swift in Sources */,
 				BC1058472ABECCA40065FC02 /* widgetLiveActivity.swift in Sources */,
 				BC1058452ABECCA40065FC02 /* widgetBundle.swift in Sources */,
 				BC03CE572ABECEA900BC6547 /* CryptyAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABCA2ABFE6F500EAC02F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DABD32ABFE6F500EAC02F /* ContentView.swift in Sources */,
+				BC9DABFF2ABFE83200EAC02F /* networkImage.swift in Sources */,
+				BC9DAC022ABFEC0100EAC02F /* viewModel.swift in Sources */,
+				BC9DABD12ABFE6F500EAC02F /* trackwatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABD92ABFE6F700EAC02F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DABE22ABFE6F800EAC02F /* trackwatch_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC9DABE32ABFE6F800EAC02F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC9DABEE2ABFE6F800EAC02F /* trackwatch_Watch_AppUITestsLaunchTests.swift in Sources */,
+				BC9DABEC2ABFE6F800EAC02F /* trackwatch_Watch_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +642,21 @@
 			isa = PBXTargetDependency;
 			target = BC10583D2ABECCA30065FC02 /* widgetExtension */;
 			targetProxy = BC10584D2ABECCA70065FC02 /* PBXContainerItemProxy */;
+		};
+		BC9DABDF2ABFE6F700EAC02F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */;
+			targetProxy = BC9DABDE2ABFE6F700EAC02F /* PBXContainerItemProxy */;
+		};
+		BC9DABE92ABFE6F800EAC02F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */;
+			targetProxy = BC9DABE82ABFE6F800EAC02F /* PBXContainerItemProxy */;
+		};
+		BC9DABF02ABFE6F800EAC02F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */;
+			targetProxy = BC9DABEF2ABFE6F800EAC02F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -772,6 +1028,333 @@
 			};
 			name = Profile;
 		};
+		BC9DABF32ABFE6F800EAC02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trackwatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = trackwatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.tittam;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.tittam.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		BC9DABF42ABFE6F800EAC02F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trackwatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = trackwatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.tittam;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.tittam.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		BC9DABF52ABFE6F800EAC02F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"trackwatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = trackwatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.tittam;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.tittam.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Profile;
+		};
+		BC9DABF62ABFE6F800EAC02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikasaloli.trackwatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trackwatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/trackwatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		BC9DABF72ABFE6F800EAC02F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikasaloli.trackwatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trackwatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/trackwatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		BC9DABF82ABFE6F800EAC02F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikasaloli.trackwatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/trackwatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/trackwatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Profile;
+		};
+		BC9DABF92ABFE6F800EAC02F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikasaloli.trackwatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "trackwatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		BC9DABFA2ABFE6F800EAC02F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikasaloli.trackwatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "trackwatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		BC9DABFB2ABFE6F800EAC02F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikasaloli.trackwatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "trackwatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Profile;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -801,6 +1384,36 @@
 				BC1058512ABECCA70065FC02 /* Debug */,
 				BC1058522ABECCA70065FC02 /* Release */,
 				BC1058532ABECCA70065FC02 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC9DABFC2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9DABF32ABFE6F800EAC02F /* Debug */,
+				BC9DABF42ABFE6F800EAC02F /* Release */,
+				BC9DABF52ABFE6F800EAC02F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC9DABFD2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9DABF62ABFE6F800EAC02F /* Debug */,
+				BC9DABF72ABFE6F800EAC02F /* Release */,
+				BC9DABF82ABFE6F800EAC02F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC9DABFE2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC9DABF92ABFE6F800EAC02F /* Debug */,
+				BC9DABFA2ABFE6F800EAC02F /* Release */,
+				BC9DABFB2ABFE6F800EAC02F /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

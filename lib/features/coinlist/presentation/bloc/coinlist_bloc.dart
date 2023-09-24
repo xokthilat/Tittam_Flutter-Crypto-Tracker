@@ -83,6 +83,20 @@ class CoinlistBloc extends Bloc<CoinlistEvent, CoinlistState> {
                 "isPositivePrice":
                     updatedCoin.priceChangePercentage24H > 0 ? true : false,
               });
+              _channel
+                  .invokeMethod('flutterToWatch', {
+                    "price": updatedPrice,
+                    "change":
+                        "${updatedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
+                    "name": updatedCoin.name,
+                    "image": updatedCoin.image,
+                    "isPositivePrice":
+                        updatedCoin.priceChangePercentage24H > 0 ? true : false,
+                  })
+                  .then((value) => print(value))
+                  .catchError((err) {
+                    print(err);
+                  });
             },
             orElse: () {});
       });
