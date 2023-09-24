@@ -50,7 +50,8 @@ class CoinListRepositoryImpl implements CoinListRepository {
         "id": "bitcoin",
         "symbol": "BTC",
         "name": "Bitcoin",
-        "image": "https://example.com/bitcoin.png",
+        "image":
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png",
         "current_price": randomBtc,
         "market_cap": 900000000000,
         "market_cap_rank": 1,
@@ -77,7 +78,8 @@ class CoinListRepositoryImpl implements CoinListRepository {
         "id": "ethereum",
         "symbol": "ETH",
         "name": "Ethereum",
-        "image": "https://example.com/ethereum.png",
+        "image":
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/1200px-Ethereum-icon-purple.svg.png",
         "current_price": randomEth,
         "market_cap": 400000000000,
         "market_cap_rank": 2,
@@ -104,7 +106,8 @@ class CoinListRepositoryImpl implements CoinListRepository {
         "id": "ethereum-classic",
         "symbol": "ETC",
         "name": "Ethereum Classic",
-        "image": "https://example.com/ethereum-classic.png",
+        "image":
+            "https://assets.coingecko.com/coins/images/453/large/ethereum-classic-logo.png?1547034169",
         "current_price": randomEtc,
         "market_cap": 9000000000,
         "market_cap_rank": 25,
