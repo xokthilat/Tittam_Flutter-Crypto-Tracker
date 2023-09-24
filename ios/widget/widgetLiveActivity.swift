@@ -51,13 +51,6 @@ struct WidgetLiveActivity: Widget {
                     .font(.caption2)
                     .foregroundColor(context.state.isPositivePrice ? .green : .red)
             } minimal: {
-                VStack(alignment: .center) {
-                    Image(systemName: "timer")
-                    Text("test4")
-                        .multilineTextAlignment(.center)
-                        .monospacedDigit()
-                        .font(.caption2)
-                }
             }
             .keylineTint(.cyan)
         }

@@ -23,6 +23,13 @@
 		BC1058492ABECCA40065FC02 /* widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1058482ABECCA40065FC02 /* widget.swift */; };
 		BC10584B2ABECCA70065FC02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC10584A2ABECCA70065FC02 /* Assets.xcassets */; };
 		BC10584F2ABECCA70065FC02 /* widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC10583E2ABECCA40065FC02 /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC67B6DE2AC029D5002D188B /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC10583F2ABECCA40065FC02 /* WidgetKit.framework */; };
+		BC67B6DF2AC029D5002D188B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC1058412ABECCA40065FC02 /* SwiftUI.framework */; };
+		BC67B6E22AC029D5002D188B /* watchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67B6E12AC029D5002D188B /* watchWidget.swift */; };
+		BC67B6E42AC029D7002D188B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC67B6E32AC029D7002D188B /* Assets.xcassets */; };
+		BC67B6EA2AC029E7002D188B /* watchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BC67B6DD2AC029D5002D188B /* watchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BC67B6F22AC034A4002D188B /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC67B6F12AC034A4002D188B /* viewModel.swift */; };
+		BC67B6F72AC04291002D188B /* ConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = BC67B6F62AC04291002D188B /* ConfigurationIntent.intentdefinition */; };
 		BC9DABD12ABFE6F500EAC02F /* trackwatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABD02ABFE6F500EAC02F /* trackwatchApp.swift */; };
 		BC9DABD32ABFE6F500EAC02F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9DABD22ABFE6F500EAC02F /* ContentView.swift */; };
 		BC9DABD52ABFE6F700EAC02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9DABD42ABFE6F700EAC02F /* Assets.xcassets */; };
@@ -42,6 +49,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BC10583D2ABECCA30065FC02;
 			remoteInfo = widgetExtension;
+		};
+		BC67B6EB2AC029E8002D188B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC67B6DC2AC029D5002D188B;
+			remoteInfo = watchWidgetExtension;
 		};
 		BC9DABDE2ABFE6F700EAC02F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -88,6 +102,17 @@
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC67B6ED2AC029E8002D188B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BC67B6EA2AC029E7002D188B /* watchWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC9DABF22ABFE6F800EAC02F /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +152,12 @@
 		BC1058482ABECCA40065FC02 /* widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = widget.swift; sourceTree = "<group>"; };
 		BC10584A2ABECCA70065FC02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC10584C2ABECCA70065FC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC67B6DD2AC029D5002D188B /* watchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = watchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC67B6E12AC029D5002D188B /* watchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchWidget.swift; sourceTree = "<group>"; };
+		BC67B6E32AC029D7002D188B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC67B6E52AC029D7002D188B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC67B6F12AC034A4002D188B /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
+		BC67B6F62AC04291002D188B /* ConfigurationIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ConfigurationIntent.intentdefinition; sourceTree = "<group>"; };
 		BC9DABC72ABEDCEA00EAC02F /* networkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkImage.swift; sourceTree = "<group>"; };
 		BC9DABCE2ABFE6F500EAC02F /* trackwatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "trackwatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9DABD02ABFE6F500EAC02F /* trackwatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trackwatchApp.swift; sourceTree = "<group>"; };
@@ -157,6 +188,15 @@
 			files = (
 				BC1058422ABECCA40065FC02 /* SwiftUI.framework in Frameworks */,
 				BC1058402ABECCA40065FC02 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC67B6DA2AC029D5002D188B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC67B6DF2AC029D5002D188B /* SwiftUI.framework in Frameworks */,
+				BC67B6DE2AC029D5002D188B /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +255,7 @@
 				BC9DABCF2ABFE6F500EAC02F /* trackwatch Watch App */,
 				BC9DABE02ABFE6F800EAC02F /* trackwatch Watch AppTests */,
 				BC9DABEA2ABFE6F800EAC02F /* trackwatch Watch AppUITests */,
+				BC67B6E02AC029D5002D188B /* watchWidget */,
 				97C146EF1CF9000F007C117D /* Products */,
 				0EBC72F9D447267AAC4D2BDF /* Pods */,
 				D1C96E9BDC15B30028ECB53D /* Frameworks */,
@@ -229,6 +270,7 @@
 				BC9DABCE2ABFE6F500EAC02F /* trackwatch Watch App.app */,
 				BC9DABDD2ABFE6F700EAC02F /* trackwatch Watch AppTests.xctest */,
 				BC9DABE72ABFE6F800EAC02F /* trackwatch Watch AppUITests.xctest */,
+				BC67B6DD2AC029D5002D188B /* watchWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +300,26 @@
 				BC10584C2ABECCA70065FC02 /* Info.plist */,
 			);
 			path = widget;
+			sourceTree = "<group>";
+		};
+		BC67B6E02AC029D5002D188B /* watchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BC67B6E12AC029D5002D188B /* watchWidget.swift */,
+				BC67B6EE2AC03439002D188B /* viewModel */,
+				BC67B6E32AC029D7002D188B /* Assets.xcassets */,
+				BC67B6E52AC029D7002D188B /* Info.plist */,
+				BC67B6F62AC04291002D188B /* ConfigurationIntent.intentdefinition */,
+			);
+			path = watchWidget;
+			sourceTree = "<group>";
+		};
+		BC67B6EE2AC03439002D188B /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC67B6F12AC034A4002D188B /* viewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		BC9DABCF2ABFE6F500EAC02F /* trackwatch Watch App */ = {
@@ -362,6 +424,23 @@
 			productReference = BC10583E2ABECCA40065FC02 /* widgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		BC67B6DC2AC029D5002D188B /* watchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC67B6E92AC029D7002D188B /* Build configuration list for PBXNativeTarget "watchWidgetExtension" */;
+			buildPhases = (
+				BC67B6D92AC029D5002D188B /* Sources */,
+				BC67B6DA2AC029D5002D188B /* Frameworks */,
+				BC67B6DB2AC029D5002D188B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watchWidgetExtension;
+			productName = watchWidgetExtension;
+			productReference = BC67B6DD2AC029D5002D188B /* watchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC9DABFC2ABFE6F800EAC02F /* Build configuration list for PBXNativeTarget "trackwatch Watch App" */;
@@ -369,10 +448,12 @@
 				BC9DABCA2ABFE6F500EAC02F /* Sources */,
 				BC9DABCB2ABFE6F500EAC02F /* Frameworks */,
 				BC9DABCC2ABFE6F500EAC02F /* Resources */,
+				BC67B6ED2AC029E8002D188B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BC67B6EC2AC029E8002D188B /* PBXTargetDependency */,
 			);
 			name = "trackwatch Watch App";
 			productName = "trackwatch Watch App";
@@ -432,6 +513,9 @@
 					BC10583D2ABECCA30065FC02 = {
 						CreatedOnToolsVersion = 15.0;
 					};
+					BC67B6DC2AC029D5002D188B = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					BC9DABCD2ABFE6F500EAC02F = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -463,6 +547,7 @@
 				BC9DABCD2ABFE6F500EAC02F /* trackwatch Watch App */,
 				BC9DABDC2ABFE6F700EAC02F /* trackwatch Watch AppTests */,
 				BC9DABE62ABFE6F800EAC02F /* trackwatch Watch AppUITests */,
+				BC67B6DC2AC029D5002D188B /* watchWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -484,6 +569,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC10584B2ABECCA70065FC02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC67B6DB2AC029D5002D188B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC67B6E42AC029D7002D188B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +700,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC67B6D92AC029D5002D188B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC67B6F22AC034A4002D188B /* viewModel.swift in Sources */,
+				BC67B6E22AC029D5002D188B /* watchWidget.swift in Sources */,
+				BC67B6F72AC04291002D188B /* ConfigurationIntent.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BC9DABCA2ABFE6F500EAC02F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -642,6 +745,11 @@
 			isa = PBXTargetDependency;
 			target = BC10583D2ABECCA30065FC02 /* widgetExtension */;
 			targetProxy = BC10584D2ABECCA70065FC02 /* PBXContainerItemProxy */;
+		};
+		BC67B6EC2AC029E8002D188B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC67B6DC2AC029D5002D188B /* watchWidgetExtension */;
+			targetProxy = BC67B6EB2AC029E8002D188B /* PBXContainerItemProxy */;
 		};
 		BC9DABDF2ABFE6F700EAC02F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1028,6 +1136,134 @@
 			};
 			name = Profile;
 		};
+		BC67B6E62AC029D7002D188B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = watchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.tittam.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		BC67B6E72AC029D7002D188B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = watchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.tittam.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		BC67B6E82AC029D7002D188B /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PSAGGQ79M6;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = watchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = watchWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.tittam.watchkitapp.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Profile;
+		};
 		BC9DABF32ABFE6F800EAC02F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1384,6 +1620,16 @@
 				BC1058512ABECCA70065FC02 /* Debug */,
 				BC1058522ABECCA70065FC02 /* Release */,
 				BC1058532ABECCA70065FC02 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC67B6E92AC029D7002D188B /* Build configuration list for PBXNativeTarget "watchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC67B6E62AC029D7002D188B /* Debug */,
+				BC67B6E72AC029D7002D188B /* Release */,
+				BC67B6E82AC029D7002D188B /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

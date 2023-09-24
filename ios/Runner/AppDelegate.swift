@@ -113,13 +113,6 @@ extension AppDelegate: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        DispatchQueue.main.async {
-            if let method = message["method"] as? String, let controller = self.window?.rootViewController as? FlutterViewController {
-                let channel = FlutterMethodChannel(
-                    name: "com.xokthilat.titarm",
-                    binaryMessenger: controller.binaryMessenger)
-                channel.invokeMethod(method, arguments: message)
-            }
-        }
+    
     }
 }
