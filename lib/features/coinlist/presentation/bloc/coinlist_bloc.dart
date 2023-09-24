@@ -58,7 +58,7 @@ class CoinlistBloc extends Bloc<CoinlistEvent, CoinlistState> {
         await _channel.invokeMethod('startLiveActivity', {
           "price": price,
           "change":
-              "${selectedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
+              "+ ${selectedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
           "name": selectedCoin.name,
           "isPositivePrice":
               selectedCoin.priceChangePercentage24H > 0 ? true : false,
@@ -78,7 +78,7 @@ class CoinlistBloc extends Bloc<CoinlistEvent, CoinlistState> {
               _channel.invokeMethod('updateLiveActivity', {
                 "price": updatedPrice,
                 "change":
-                    "${updatedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
+                    "+ ${updatedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
                 "name": updatedCoin.name,
                 "isPositivePrice":
                     updatedCoin.priceChangePercentage24H > 0 ? true : false,
@@ -87,7 +87,7 @@ class CoinlistBloc extends Bloc<CoinlistEvent, CoinlistState> {
                   .invokeMethod('flutterToWatch', {
                     "price": updatedPrice,
                     "change":
-                        "${updatedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
+                        "+ ${updatedCoin.priceChangePercentage24H.toStringAsFixed(2)} %",
                     "name": updatedCoin.name,
                     "image": updatedCoin.image,
                     "isPositivePrice":

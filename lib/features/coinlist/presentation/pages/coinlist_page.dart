@@ -20,16 +20,6 @@ class ConlistPage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const Padding(
-              padding: EdgeInsets.only(left: 15.0, right: 15),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text("Coins", style: TextStyle(fontSize: 20)),
-                  Text("Current price", style: TextStyle(fontSize: 20))
-                ],
-              ),
-            ),
             TextButton(
                 child: const Text("Stop LiveActivity"),
                 onPressed: () async {
