@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -38,68 +40,69 @@ class ConlistPage extends StatelessWidget {
               height: 30,
             ),
             Expanded(
-              child: BlocProvider(
-                create: (context) =>
-                    sl<CoinlistBloc>()..add(const CoinListFetchCoinList()),
-                child: BlocBuilder<CoinlistBloc, CoinlistState>(
-                  builder: (context, state) {
-                    return state.when(
-                        content: (List<Coin> listCoin) {
-                          return ListView.builder(
-                              itemCount: listCoin.length,
-                              itemBuilder: (ctx, index) {
-                                Coin coin = listCoin[index];
-                                return InkWell(
-                                  onTap: () async {
-                                    context
-                                        .read<CoinlistBloc>()
-                                        .add(SelectCoinToLive(coin));
-                                  },
-                                  child: Card(
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(15.0),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(16.0),
-                                      child: Row(
-                                        children: [
-                                          CircleAvatar(
-                                            backgroundColor: Colors.transparent,
-                                            child: Image.network(coin.image),
+              child: BlocBuilder<CoinlistBloc, CoinlistState>(
+                builder: (context, state) {
+                  return state.when(
+                      content: (List<Coin> listCoin) {
+                        return ListView.builder(
+                            itemCount: listCoin.length,
+                            itemBuilder: (ctx, index) {
+                              Coin coin = listCoin[index];
+                              return InkWell(
+                                onTap: () async {
+                                  context
+                                      .read<CoinlistBloc>()
+                                      .add(SelectCoinToLive(coin));
+                                },
+                                child: Card(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Row(
+                                      children: [
+                                        CircleAvatar(
+                                          backgroundColor: Colors.transparent,
+                                          child: Image.network(coin.image),
+                                        ),
+                                        const SizedBox(
+                                          width: 10,
+                                        ),
+                                        Text(coin.name),
+                                        Expanded(
+                                          child: Align(
+                                            alignment: Alignment.centerRight,
+                                            child: Text(
+                                                "${currencyFormat.format((coin.currentPrice))} Usd"),
                                           ),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          Text(coin.name),
-                                          Expanded(
-                                            child: Align(
-                                              alignment: Alignment.centerRight,
-                                              child: Text(
-                                                  "${currencyFormat.format((coin.currentPrice))} Usd"),
-                                            ),
-                                          ),
-                                          //add green check icon if isSelected
-                                          if (context
-                                                  .read<CoinlistBloc>()
-                                                  .selectedCoinId ==
-                                              coin.id)
-                                            const Icon(
-                                              Icons.check,
-                                              color: Colors.green,
-                                            )
-                                        ],
-                                      ),
+                                        ),
+                                        //add green check icon if isSelected
+                                        if (context
+                                                .read<CoinlistBloc>()
+                                                .selectedCoinId ==
+                                            coin.id)
+                                          const Icon(
+                                            Icons.check,
+                                            color: Colors.green,
+                                          )
+                                      ],
                                     ),
                                   ),
-                                );
-                              });
-                        },
-                        error: (error) {
-                          return Text(error.toString());
-                        },
-                        loading: () => const CircularProgressIndicator());
-                  },
-                ),
+                                ),
+                              );
+                            });
+                      },
+                      error: (error) {
+                        return error.when(
+                            request: (err) =>
+                                Text(err.message ?? err.toString()),
+                            connectivity: (err) =>
+                                Text(err ?? "No Internet Connection"),
+                            type: (err) => Text(err ?? "Internal Error"));
+                      },
+                      loading: () => const Text("Loading..."));
+                },
               ),
             ),
           ],

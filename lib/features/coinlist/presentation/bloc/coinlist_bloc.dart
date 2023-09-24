@@ -37,7 +37,7 @@ class CoinlistBloc extends Bloc<CoinlistEvent, CoinlistState> {
   final _channel = const MethodChannel('com.xokthilat.titarm');
   StreamSubscription<CoinlistState>? _streamSubscription;
 
-  String selectedCoinId = "";
+  String? selectedCoinId;
   Future<void> _onSelectCoinToLive(
       SelectCoinToLive event, Emitter<CoinlistState> emit) async {
     try {

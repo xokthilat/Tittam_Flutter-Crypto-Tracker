@@ -20,21 +20,21 @@ mixin _$CoinlistState {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function(List<Coin> listCoin) content,
-    required TResult Function(Exception e) error,
+    required TResult Function(NetworkError e) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function(List<Coin> listCoin)? content,
-    TResult? Function(Exception e)? error,
+    TResult? Function(NetworkError e)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult Function(NetworkError e)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -120,7 +120,7 @@ class _$_CoinListLoading implements _CoinListLoading {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function(List<Coin> listCoin) content,
-    required TResult Function(Exception e) error,
+    required TResult Function(NetworkError e) error,
   }) {
     return loading();
   }
@@ -130,7 +130,7 @@ class _$_CoinListLoading implements _CoinListLoading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function(List<Coin> listCoin)? content,
-    TResult? Function(Exception e)? error,
+    TResult? Function(NetworkError e)? error,
   }) {
     return loading?.call();
   }
@@ -140,7 +140,7 @@ class _$_CoinListLoading implements _CoinListLoading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult Function(NetworkError e)? error,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -260,7 +260,7 @@ class _$_CoinListContent implements _CoinListContent {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function(List<Coin> listCoin) content,
-    required TResult Function(Exception e) error,
+    required TResult Function(NetworkError e) error,
   }) {
     return content(listCoin);
   }
@@ -270,7 +270,7 @@ class _$_CoinListContent implements _CoinListContent {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function(List<Coin> listCoin)? content,
-    TResult? Function(Exception e)? error,
+    TResult? Function(NetworkError e)? error,
   }) {
     return content?.call(listCoin);
   }
@@ -280,7 +280,7 @@ class _$_CoinListContent implements _CoinListContent {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult Function(NetworkError e)? error,
     required TResult orElse(),
   }) {
     if (content != null) {
@@ -340,7 +340,9 @@ abstract class _$$_CoinListErrorCopyWith<$Res> {
           _$_CoinListError value, $Res Function(_$_CoinListError) then) =
       __$$_CoinListErrorCopyWithImpl<$Res>;
   @useResult
-  $Res call({Exception e});
+  $Res call({NetworkError e});
+
+  $NetworkErrorCopyWith<$Res> get e;
 }
 
 /// @nodoc
@@ -360,8 +362,16 @@ class __$$_CoinListErrorCopyWithImpl<$Res>
       null == e
           ? _value.e
           : e // ignore: cast_nullable_to_non_nullable
-              as Exception,
+              as NetworkError,
     ));
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $NetworkErrorCopyWith<$Res> get e {
+    return $NetworkErrorCopyWith<$Res>(_value.e, (value) {
+      return _then(_value.copyWith(e: value));
+    });
   }
 }
 
@@ -371,7 +381,7 @@ class _$_CoinListError implements _CoinListError {
   const _$_CoinListError(this.e);
 
   @override
-  final Exception e;
+  final NetworkError e;
 
   @override
   String toString() {
@@ -400,7 +410,7 @@ class _$_CoinListError implements _CoinListError {
   TResult when<TResult extends Object?>({
     required TResult Function() loading,
     required TResult Function(List<Coin> listCoin) content,
-    required TResult Function(Exception e) error,
+    required TResult Function(NetworkError e) error,
   }) {
     return error(e);
   }
@@ -410,7 +420,7 @@ class _$_CoinListError implements _CoinListError {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? loading,
     TResult? Function(List<Coin> listCoin)? content,
-    TResult? Function(Exception e)? error,
+    TResult? Function(NetworkError e)? error,
   }) {
     return error?.call(e);
   }
@@ -420,7 +430,7 @@ class _$_CoinListError implements _CoinListError {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? loading,
     TResult Function(List<Coin> listCoin)? content,
-    TResult Function(Exception e)? error,
+    TResult Function(NetworkError e)? error,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -465,9 +475,9 @@ class _$_CoinListError implements _CoinListError {
 }
 
 abstract class _CoinListError implements CoinlistState {
-  const factory _CoinListError(final Exception e) = _$_CoinListError;
+  const factory _CoinListError(final NetworkError e) = _$_CoinListError;
 
-  Exception get e;
+  NetworkError get e;
   @JsonKey(ignore: true)
   _$$_CoinListErrorCopyWith<_$_CoinListError> get copyWith =>
       throw _privateConstructorUsedError;
